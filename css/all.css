@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  color: #3F5D45;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.headBar {
+  margin-top: 30px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBar li {
+  margin-left: 60px;
+}
+
+.navBar a {
+  font-size: 16px;
+  color: #3F5D45;
+  opacity: 1.0;
+}
+
+.navBar a:hover {
+  opacity: 0.5;
+}
+
+.productBanner {
+  height: 496px;
+  margin: 36px 0;
+  background-image: url("/img/banner.png");
+}
+
+.productContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productNavBar {
+  min-width: 300px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.productNavBar li {
+  height: 65px;
+  font-size: 24px;
+  line-height: 65px;
+  border: #EAF0ED 1px solid;
+}
+
+.productNavBar .dessertTitle {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+.productNavBar .dessertMenu:hover {
+  background-color: #EAF0ED;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card li {
+  margin-bottom: 20px;
+  min-width: 300px;
+}
+
+.card .productImg {
+  position: relative;
+}
+
+.card .productImg img {
+  display: block;
+}
+
+.card .productImg .featured {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+}
+
+.card .productImg .lick {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card .productPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #EAF0ED;
+}
+
+.card .productPrice hr {
+  color: #EAF0ED;
+  border: 1px solid;
+}
+
+.card .productPrice span {
+  display: block;
+  margin: 14px auto;
+}
+
+.card .addCart {
+  text-align: center;
+  line-height: 65px;
+  padding: 16px auto;
+  background-color: #EAF0ED;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.pageNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.pageNav .pagePath {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pageNav .pagePath img, .pageNav .pagePath span {
+  display: block;
+}
+
+.pageNav .pagePath .pageNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 30px;
+  border: 1px solid #EAF0ED;
+}
+
+.pageNav .pagePath .pageNum:hover {
+  background-color: #3F5D45;
+}
+
+.pageNav .pagePath .pageNum:hover span {
+  color: #EAF0ED;
+}
+/*# sourceMappingURL=all.css.map */

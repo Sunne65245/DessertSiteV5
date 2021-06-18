@@ -1,0 +1,172 @@
+$dominant:#3F5D45;
+$basic:#EAF0ED;
+
+*{ 
+    // outline: 1px solid pink;
+    color:$dominant;
+    box-sizing: border-box;
+
+}
+// a標籤的四種狀態都和本身顏色保持一致
+a, a:hover, a:visited, a:link, a:active {
+    text-decoration:none;
+    outline: none;
+    display: block;
+    
+}
+
+//樣式設計
+.content{
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.headBar{
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.navBar{
+    display: flex;
+    align-items:center;
+    li{
+        margin-left:60px;
+        
+    }
+
+    a{
+        font-size: 16px;
+        color: $dominant;
+        opacity: 1.0;
+        
+    }
+    a:hover{
+        opacity: 0.5;
+    }
+
+}
+
+.productBanner{
+    height: 496px;
+    margin: 36px 0;
+    background-image: url("/img/banner.png");
+}
+
+//產品的資訊選單樣式
+.productContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productNavBar{
+    min-width: 300px;
+    text-align: center;
+    margin-right: 30px;
+    
+    li{
+        height: 65px;
+        font-size: 24px;
+        line-height: 65px;
+        border: $basic 1px solid;
+    }
+    .dessertTitle{
+        background-color: $dominant;
+        color:$basic;
+        
+    }
+    .dessertMenu:hover{
+        background-color:$basic;
+   
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+    li{
+        margin-bottom: 20px;
+        min-width: 300px;
+    }
+
+    .productImg{
+        
+        position:relative;
+        img{
+            display: block;
+        }
+
+        .featured{
+            background-color:$dominant;
+            color: $basic;
+            padding: 10px;
+            position: absolute;
+            left: 20px;
+        }
+        .lick{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+    }
+    .productPrice{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $basic;
+        hr{
+            color:$basic;
+            //height: 1px;
+            border: 1px solid;
+            
+        }
+        span{
+            display: block;
+            margin: 14px auto;
+        }
+
+    }
+    .addCart{
+        text-align: center;
+        line-height: 65px;
+        padding: 16px auto;
+        background-color: $basic;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+}
+
+.pageNav{
+    display: flex;
+    flex-direction:row-reverse;
+    .pagePath{
+        display: flex;
+        flex-direction:row;
+        img,span{
+            display: block;
+        }
+        .pageNum{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding:30px ;
+            border: 1px solid $basic;
+
+        }
+
+        .pageNum:hover{
+            background-color: $dominant;
+            span{
+                color: $basic;
+            }
+
+
+        }
+    }
+}
